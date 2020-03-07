@@ -7,10 +7,10 @@
 <body>
 
 <h1>USPS CALCULATOR</h1>
-<form method="POST" action="/getRate" id="calcRates">
+<form method="POST" action="/getRate" id="calcRates" name="calcRates">
   <label for="weight">Weight &lpar;Number up to 2 Decimal Points&rpar;: </label> <input type="text" name="weight" id="weight" pattern="^\d*(\.\d{0,2})?$"> <br/>
   <label for="type">Type: </label>
-  <select>
+  <select name="type" id="type">
     <option value="letterStamp">Letters &lpar;Stamped&rpar;</option>
     <option value="letterMeter">Letters &lpar;Metered&rpar;</option>
     <option value="largeEnvelope">Large Envelopes &lpar;Flats&rpar;</option>

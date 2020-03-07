@@ -2,6 +2,8 @@ body {
   display: flex;
   flex-direction: column;
   background: darkgray;
+  justify-content: center;
+  text-align: center;
 }
 
 body form {

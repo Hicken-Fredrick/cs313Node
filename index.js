@@ -26,40 +26,40 @@ function calcRate(weight, type) {
   switch(type) {
     case'letterStamp':
       if (costWeight < 1) {
-        return .55; 
+        return "Shipping Cost: $" + .55; 
       } else if (costWeight < 5) {
-        return .4 + (costWeight * .15); 
+        return "Shipping Cost: $" + (.4 + (costWeight * .15)); 
       } else {
         return "TOO HEAVY!"; 
       }
       break;
     case'letterMeter':
       if (costWeight < 1) {
-        return .50; 
+        return "Shipping Cost: $"  + .50; 
       } else if (costWeight < 5) {
-        return .35 + (costWeight * .15); 
+        return "Shipping Cost: $"  + (.35 + (costWeight * .15)); 
       } else {
         return "TOO HEAVY!";
       }
       break;
     case'largeEnvelope':
       if (costWeight < 1) {
-        return 1; 
+        return "Shipping Cost: $"  + 1; 
       } else if (costWeight < 14) {
-        return 1 + (costWeight * .2); 
+        return "Shipping Cost: $"  + (1 + (costWeight * .2)); 
       } else {
         return "TOO HEAVY!";
       }
       break;
     case'package':
       if (costWeight < 5) {
-        return 3.80; 
+        return "Shipping Cost: $"  + 3.80; 
       } else if (costWeight < 9) {
-        return 4.60; 
+        return "Shipping Cost: $"  + 4.60; 
       } else if (costWeight < 13){
-        return 5.30; 
+        return "Shipping Cost: $"  + 5.30; 
       } else if (costWeight < 14) {
-        return 5.90; 
+        return "Shipping Cost: $"  + 5.90; 
       } else {
         return "TOO HEAVY!"; 
       }

@@ -8,3 +8,7 @@ body form {
   display: flex;
   flex-direction: column;
 }
+
+body form input {
+  width: 200px; 
+}

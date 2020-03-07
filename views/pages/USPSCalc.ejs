@@ -7,7 +7,23 @@
 <body>
 
 <h1>USPS CALCULATOR</h1>
-
+<form>
+  <label for="weight">Weight: </label> <input type="text" name="weight" id="weight" pattern="[0-9]">
+  <label for="type">Type: </label>
+  <select>
+    <option value="letterStamp">Letters &lpar;Stamped&rpar;</option>
+    <option value="letterMeter">Letters &lpar;Metered&rpar;</option>
+    <option value="largeEnvelope">Large Envelopes &lpar;Flats&rpar;</option>
+    <option value="package">Packages</option>
+  </select>
+  <input type="submit" value="Calculate">
+</form>
 
 </body>
 </html>
+
+
+ echo '<div class="hide"><form id="listInsert" action="addInnerListDB.php" method="post">';
+    echo '<label for="listName">List Name:</label> <input type="text" id="listName" name="listName">';
+    echo '<label for="desc">List Description:</label> <input type="" id="desc" name="listDescription">';
+    echo '<input type="hidden" value="' . $sublistid .'" name="listid">';

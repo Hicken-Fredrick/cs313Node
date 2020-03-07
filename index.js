@@ -9,3 +9,7 @@ express()
   .get('/', (req, res) => res.render('pages/USPSCalc'))
   .get('/getRate', (req, res) => res.render('pages/USPSCalcResult'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+
+function calcRate(weight, type) {
+  
+}

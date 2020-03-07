@@ -7,8 +7,8 @@
 <body>
 
 <h1>USPS CALCULATOR</h1>
-<form>
-  <label for="weight">Weight: </label> <input type="text" name="weight" id="weight" pattern="[0-9]">
+<form method="POST" action="/getRate">
+  <label for="weight">Weight &lpar;Number up to 2 Decimal Points&rpar;: </label> <input type="text" name="weight" id="weight" pattern="^\d*(\.\d{0,2})?$">
   <label for="type">Type: </label>
   <select>
     <option value="letterStamp">Letters &lpar;Stamped&rpar;</option>
@@ -21,9 +21,3 @@
 
 </body>
 </html>
-
-
- echo '<div class="hide"><form id="listInsert" action="addInnerListDB.php" method="post">';
-    echo '<label for="listName">List Name:</label> <input type="text" id="listName" name="listName">';
-    echo '<label for="desc">List Description:</label> <input type="" id="desc" name="listDescription">';
-    echo '<input type="hidden" value="' . $sublistid .'" name="listid">';

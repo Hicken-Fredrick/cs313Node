@@ -8,10 +8,8 @@ express()
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/USPSCalc'))
   .post('/getRate', (req, res) => {
-    var data = $("#calcRates :input").serializeArray();
-    console.log(data);
     res.render('pages/USPSCalcResult');
-  })
+  });
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 function calcRate(weight, type) {

@@ -3,3 +3,8 @@ body {
   flex-direction: column;
   background: darkgray;
 }
+
+body form {
+  display: flex;
+  flex-direction: column;
+}
